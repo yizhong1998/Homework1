@@ -19,7 +19,7 @@ As long as you keep the repo private, you are welcome to commit & push to your o
 # Instructions
 
 ## 0. Clone or Download the repo and set up your project.
-1. You can either [clone the project in PyCharm](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html) or download the repo to your computer as a .zip. Either way, just get the files onto your machine.
+1. You can [clone the project in PyCharm](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html), [mirror the repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository) or simply download the repo to your computer as a .zip-- whichever way you find easiest. The point is: just get the files onto your machine, and have a way to push your work up to your own private Git repo.
 2. Once you've cloned to your computer, open the main project folder in PyCharm.
 3. You will need to add a virtual environment for this project. Do this by clicking on the "Python" version text at the lower-right hand side of your screen (below), and add a virtual environment (Python 3.9) using "add interpereter". This should add a 'venv' directory to your project.
   
