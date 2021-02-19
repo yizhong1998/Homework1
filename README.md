@@ -1,5 +1,7 @@
 # HW1: Connecting Dash to an Execution System
-This homework will introduce you to the art of communicating between your Python Dash app and a broker's execution system. We'll be using Trader Workstation (TWS) from Interactive Brokers in this exercise to retrieve data and place orders on a paper trading account.
+This homework will introduce you to the art of communicating between your Python Dash app and a broker's execution system.  We'll be using Trader Workstation (TWS) from Interactive Brokers as the execution system, and a very simple file input & output (i/o) system to achieve communication between Dash and TWS. This *ad hoc* communication design is not intended for production scale applications, but was adopted in this homework for two pedagogical reasons:
+1. Students can stop their apps at any time and examine the i/o files using human-readable tools like Excel or Notepad to understand how the data is being passed between the apps.
+2. Because they operate in conceptually the same way, this setup prepares the student to understand **sockets**, which *are* suitable for production-level applications.
 
 # Overview
 The Flask framework on which Dash is built will **not** allow a connection to Interactive Brokers within a dash app itself, which means that calls to and from TWS can't be made from within Dash. This inconvenience adds a layer of complexity to the system architecture... but not an insurmountable one.
@@ -7,15 +9,21 @@ The solution is to run *two apps at the same time*: one (**ibkr_app.py**) that c
 ### System Architecture
 ![Overview](www/hw1.png)
 
+# The Rules:
+You'll be downloading this repository, finishing the system by writing in yoru own code, and pushing the finished project up to your GitHub repo by the due date. 
+
+It is important that you **do not push or publish any of your code before the assignment is due**. If you finish early, simply email the TA or the Instructor and we'll be happy to grade it for you as soon as we are able.
+
 # Instructions
 
-## 0. Clone this repo to your own computer.
-**Do not push or publish any of your code until the assignment is due**. 
-It's important that your fork is private to keep your code confidential until everyone has turned in the assignment. Firstly, you need to fork the repo on your own account. Secondly, open the project on your own acoount on github and clone it. You need to click 'code'(next to the 'add file' bottom), and copy the address under 'HTTPS'.
-Thirdly, open pycharm and click 'Get from VSC' and paste the address at url. You'll get all things on your pycharm. Once you've cloned to your computer, open the main project folder in PyCharm and complete the following:
-* You will need to add a virtual environment for this project. Do this by clicking on the "Python" version text at the lower-right hand side of your screen (below), and add a virtual environment (Python 3.9) using "add interpereter". This should add a 'venv' directory to your project.
+## 0. Clone or Download the repo and set up your project.
+1. You can either [clone the project in PyCharm](https://www.jetbrains.com/help/pycharm/set-up-a-git-repository.html) or download the repo to your computer as a .zip. Either way, just get the files onto your machine.
+2. Once you've cloned to your computer, open the main project folder in PyCharm.
+3. You will need to add a virtual environment for this project. Do this by clicking on the "Python" version text at the lower-right hand side of your screen (below), and add a virtual environment (Python 3.9) using "add interpereter". This should add a 'venv' directory to your project.
+  
   ![interpreter click](www/click_for_interpreter.png)
-* Use pip (Terminal, not Python Console) to install the modules: *dash*, *plotly*, *pandas* and *ib_insync*.
+  
+4. Use pip (Terminal, not Python Console) to install the modules: *dash*, *plotly*, *pandas* and *ib_insync*.
 
 ## 1. Confirm your setup
 After you open this project in PyCharm, you should be able to do the following to confirm your setup is working:
