@@ -14,6 +14,8 @@ You'll be downloading this repository, finishing the system by writing in yoru o
 
 It is important that you **do not push or publish any of your code before the assignment is due**. If you finish early, simply email the TA or the Instructor and we'll be happy to grade it for you as soon as we are able.
 
+As long as you keep the repo private, you are welcome to commit & push to your own GitHub account as much as you wish! Doing so is probably a good practice that will keep a backup of your work, and will allow you to easily work from different computers & locations.
+
 # Instructions
 
 ## 0. Clone or Download the repo and set up your project.
