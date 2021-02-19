@@ -10,7 +10,9 @@ The solution is to run *two apps at the same time*: one (**ibkr_app.py**) that c
 # Instructions
 
 ## 0. Clone this repo to your own computer.
-**Do not push or publish any of your code until the assignment is due**. It's important that your code is private until everyone has turned in the assignment. Once you've cloned to your computer, open the main project folder in PyCharm and complete the following:
+**Do not push or publish any of your code until the assignment is due**. 
+It's important that your fork is private to keep your code confidential until everyone has turned in the assignment. Firstly, you need to fork the repo on your own account. Secondly, open the project on your own acoount on github and clone it. You need to click 'code'(next to the 'add file' bottom), and copy the address under 'HTTPS'.
+Thirdly, open pycharm and click 'Get from VSC' and paste the address at url. You'll get all things on your pycharm. Once you've cloned to your computer, open the main project folder in PyCharm and complete the following:
 * You will need to add a virtual environment for this project. Do this by clicking on the "Python" version text at the lower-right hand side of your screen (below), and add a virtual environment (Python 3.9) using "add interpereter". This should add a 'venv' directory to your project.
   ![interpreter click](www/click_for_interpreter.png)
 * Use pip (Terminal, not Python Console) to install the modules: *dash*, *plotly*, *pandas* and *ib_insync*.
